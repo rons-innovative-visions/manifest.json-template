@@ -1,0 +1,26 @@
+{
+    "name": "extension name",
+    "version": "0.1",
+    "manifest_version": 3,
+    "description": "extension description",
+    "permissions": ["permission name", "permission name"],
+    "content_scripts": [
+        {
+            "matches": ["website url"],
+            "js": ["./scripts/script.js"],
+            "css": ["./css/stles.css"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": { 
+            "16": "assets/icon.png",
+            "24": "assets/icon.png",
+            "32": "assets/icon.png"
+        },
+        "default_title": "title",
+        "default_popup": "popup.html"
+    }
+}
