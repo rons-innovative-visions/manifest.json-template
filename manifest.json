@@ -7,8 +7,8 @@
     "content_scripts": [
         {
             "matches": ["website url"],
-            "js": ["./scripts/script.js"],
-            "css": ["./css/stles.css"]
+            "js": ["./scripts/contentScript.js"],
+            "css": ["./css/styles.css"]
         }
     ],
     "background": {
